@@ -1,0 +1,20 @@
+//
+//  VoiceDemo-Prefix.pch
+//  VoiceDemo
+//
+//  Created by 寒影 on 31/07/2017.
+//  Copyright © 2017 xiaoi. All rights reserved.
+//
+
+#ifndef VoiceDemo_Prefix_pch
+#define VoiceDemo_Prefix_pch
+
+
+// 空值判断
+#define IsNullObject(obj) (obj == nil || obj == Nil || obj == NULL || [obj isKindOfClass:[NSNull class]] || ![obj isKindOfClass:[NSObject class]])
+
+#define IsNullString(str) (IsNullObject(str) || ![str isKindOfClass:[NSString class]] || [str length] == 0)
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#endif /* VoiceDemo_Prefix_pch */

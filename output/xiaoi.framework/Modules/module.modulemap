@@ -1,0 +1,6 @@
+framework module xiaoi {
+  umbrella header "xiaoi.h"
+
+  export *
+  module * { export * }
+}
